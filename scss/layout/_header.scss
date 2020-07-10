@@ -1,0 +1,18 @@
+.l-header{
+    height: 100%;
+    width: 100%;
+    background-color: #FFF7EF;
+    position: relative;
+    
+    h1{
+        position: absolute;
+        width: 100%;
+        top: 25%;
+        margin-left: 5%;
+        @include breakpoint(pc){
+            text-align: center;
+            margin-left: 0;
+            font-size: 8vw;
+        }
+    }
+}

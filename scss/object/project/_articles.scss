@@ -1,0 +1,26 @@
+.p-articles{
+    &__branch{
+        &__left{
+            position: relative;
+            @include box;    
+        }
+        &__right{
+            position: relative;
+            @include box;
+        }
+    }
+
+    @include breakpoint(phonem){
+        &__branch{
+            display: grid;
+            grid-template: 
+                "left right" auto / 50% 50%;
+            &__left{
+                grid-area: left;
+            }
+            &__right{
+                grid-area: right;
+            }
+        }
+    }
+}

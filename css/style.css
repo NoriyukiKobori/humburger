@@ -1,0 +1,401 @@
+html {
+  font-family: 'mplus-1m-regular';
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "header sidebar" 12vw "main sidebar" auto "footer footer" 10vw/80% 20%;
+}
+
+@media (max-width: 961px) {
+  body {
+    grid-template: "header" 30vw "main" auto "footer" 25vw/100%;
+  }
+}
+
+body header {
+  grid-area: header;
+  background-color: #fff7fe;
+}
+
+body main {
+  grid-area: main;
+}
+
+body footer {
+  grid-area: footer;
+  background-color: #fff7fe;
+}
+
+body .l-sidebar {
+  grid-area: sidebar;
+  background-color: #F2EDE9;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4vw;
+  color: #707070;
+}
+
+h2 {
+  font-size: 2vw;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 7vw;
+  color: white;
+}
+
+h4 {
+  font-size: 1.6vw;
+  color: #707070;
+  font-weight: normal;
+}
+
+hr {
+  background-color: white;
+  border: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+dt {
+  font-size: 2vw;
+}
+
+dd {
+  font-size: 1.8vw;
+  margin-top: 2px;
+}
+
+p {
+  font-size: 1vw;
+}
+
+.l-footer {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  background-image: url("../images/index_img05.jpg");
+}
+
+.l-footer__menu {
+  height: 10vw;
+  display: inline-block;
+  line-height: 5vw;
+}
+
+.l-footer__menu li {
+  font-size: 1.4vw;
+  list-style: none;
+}
+
+.l-footer__copyright {
+  font-size: 1.2vw;
+  font-style: normal;
+}
+
+.l-header {
+  height: 100%;
+  width: 100%;
+  background-color: #FFF7EF;
+  position: relative;
+}
+
+.l-header h1 {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  margin-left: 5%;
+}
+
+@media (max-width: 961px) {
+  .l-header h1 {
+    text-align: center;
+    margin-left: 0;
+    font-size: 8vw;
+  }
+}
+
+.l-sidebar h2 {
+  color: #707070;
+  margin-top: 5vw;
+  margin-left: 2vw;
+}
+
+.c-button__keyword {
+  width: 70%;
+  height: 100%;
+  border: solid thin #707070;
+  border-radius: 5%;
+  background-color: white;
+  background-image: url(../images/icon_megane.png);
+  background-size: 1.5vw;
+  background-position: 1px center;
+  padding-left: 2vw;
+}
+
+.c-button__submit {
+  width: 25%;
+  height: 100%;
+  border: solid thin #707070;
+  border-radius: 5%;
+  color: #707070;
+  background-color: #F2EDE9;
+}
+
+.c-button__menu {
+  display: none;
+}
+
+@media (max-width: 961px) {
+  .c-button__menu {
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 2%;
+    padding-right: 2vw;
+    color: #707070;
+    cursor: pointer;
+  }
+}
+
+.c-button__close img {
+  display: block;
+  color: #707070;
+  cursor: pointer;
+  width: 3vw;
+  position: absolute;
+  right: 1%;
+}
+
+@media (min-width: 962px) {
+  .c-button__close img {
+    display: none;
+  }
+}
+
+.p-hero {
+  position: relative;
+  background-color: black;
+  margin-bottom: 2%;
+  width: 100%;
+  height: 15vw;
+}
+
+@media (max-width: 640px) {
+  .p-hero {
+    height: 35vw;
+  }
+}
+
+.p-hero img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: bottom;
+}
+
+.p-hero h1 {
+  position: absolute;
+  color: white;
+  font-size: 2vw;
+  top: 45%;
+  left: 5%;
+}
+
+.p-articles__branch__left {
+  position: relative;
+}
+
+.p-articles__branch__left img {
+  width: 90%;
+  margin: 5% 5% 5% 5%;
+}
+
+.p-articles__branch__left h1 {
+  color: white;
+  font-size: 5vw;
+  position: absolute;
+  top: 2%;
+  left: 8%;
+}
+
+.p-articles__branch__left hr {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  width: 20%;
+  height: 5px;
+}
+
+.p-articles__branch__left div {
+  position: absolute;
+  bottom: 2%;
+}
+
+.p-articles__branch__left div dl {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 7% 7% 7%;
+}
+
+.p-articles__branch__right {
+  position: relative;
+}
+
+.p-articles__branch__right img {
+  width: 90%;
+  margin: 5% 5% 5% 5%;
+}
+
+.p-articles__branch__right h1 {
+  color: white;
+  font-size: 5vw;
+  position: absolute;
+  top: 2%;
+  left: 8%;
+}
+
+.p-articles__branch__right hr {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  width: 20%;
+  height: 5px;
+}
+
+.p-articles__branch__right div {
+  position: absolute;
+  bottom: 2%;
+}
+
+.p-articles__branch__right div dl {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 7% 7% 7%;
+}
+
+@media (min-width: 641px) {
+  .p-articles__branch {
+    display: -ms-grid;
+    display: grid;
+    grid-template: "left right" auto / 50% 50%;
+  }
+  .p-articles__branch__left {
+    grid-area: left;
+  }
+  .p-articles__branch__right {
+    grid-area: right;
+  }
+}
+
+.p-access {
+  background-color: black;
+  position: relative;
+  width: 100%;
+  height: 40vw;
+}
+
+@media (max-width: 769px) {
+  .p-access {
+    height: 100vw;
+  }
+}
+
+.p-access img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+  vertical-align: bottom;
+}
+
+.p-access div {
+  position: absolute;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 2%;
+}
+
+@media (max-width: 769px) {
+  .p-access div {
+    width: 100%;
+    height: 60%;
+  }
+}
+
+.p-access div h3 {
+  font-size: 1vw;
+  opacity: 1;
+  margin: 1%;
+}
+
+.p-access div hr {
+  color: white;
+  width: 10%;
+  height: 2px;
+  margin: 1%;
+}
+
+.p-access div p {
+  font-size: 0.8vw;
+  margin: 1%;
+}
+
+.p-search-form {
+  position: absolute;
+  right: 0;
+  bottom: 15%;
+  width: 30vw;
+  font-size: 1.5vw;
+  height: 3vw;
+  margin: 2vw 0;
+}
+
+@media (max-width: 961px) {
+  .p-search-form {
+    margin: 0 auto;
+    padding: 0 20% 0 22%;
+    width: 100%;
+    height: 5vw;
+  }
+}
+
+.p-container__sidebar-menu {
+  background-color: #F2EDE9;
+}
+
+.p-container__sidebar-menu.is-open {
+  display: block;
+  width: 70vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.p-container__sidebar-menu h4 {
+  color: #707070;
+  margin-top: 3vw;
+  margin-left: 2vw;
+}
+
+.p-container__sidebar-menu ul li {
+  list-style: none;
+  color: #707070;
+  font-size: 1.3vw;
+  margin-top: 1.5vw;
+  margin-left: 3.5vw;
+}
+/*# sourceMappingURL=style.css.map */
