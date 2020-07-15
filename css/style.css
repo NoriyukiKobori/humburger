@@ -1,5 +1,6 @@
 html {
   font-family: 'mplus-1m-regular';
+  background-color: firebrick;
 }
 
 body {
@@ -84,6 +85,7 @@ p {
   text-align: center;
   color: white;
   background-image: url("../images/index_img05.jpg");
+  background-size: cover;
 }
 
 .l-footer__menu {
@@ -124,10 +126,30 @@ p {
   }
 }
 
+.l-sidebar {
+  display: none;
+}
+
+@media (min-width: 962px) {
+  .l-sidebar {
+    display: block;
+  }
+}
+
 .l-sidebar h2 {
   color: #707070;
   margin-top: 5vw;
   margin-left: 2vw;
+}
+
+.l-sidebar.is-open {
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.l-sidebar.is-open h2 {
+  font-size: 0;
 }
 
 .c-button__keyword {
@@ -137,6 +159,7 @@ p {
   border-radius: 5%;
   background-color: white;
   background-image: url(../images/icon_megane.png);
+  background-repeat: no-repeat;
   background-size: 1.5vw;
   background-position: 1px center;
   padding-left: 2vw;
@@ -374,6 +397,8 @@ p {
 
 .p-container__sidebar-menu {
   background-color: #F2EDE9;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
 }
 
 .p-container__sidebar-menu.is-open {
@@ -383,6 +408,7 @@ p {
   position: absolute;
   top: 0;
   right: 0;
+  background-size: cover;
 }
 
 .p-container__sidebar-menu h4 {

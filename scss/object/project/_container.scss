@@ -1,6 +1,8 @@
 .p-container{
     &__sidebar-menu{
         background-color: #F2EDE9;
+
+        transition-duration: 3s;
         &.is-open{
             display: block;
             width: 70vw;
@@ -8,6 +10,7 @@
             position: absolute;
             top: 0;
             right: 0;
+            background-size: cover;
         }
         h4{
             color: #707070;

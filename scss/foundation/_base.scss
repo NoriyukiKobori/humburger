@@ -1,5 +1,6 @@
 html{
     font-family: 'mplus-1m-regular';
+    background-color: firebrick;
 }
 body{
     display: grid;
@@ -7,7 +8,7 @@ body{
         "header sidebar" 12vw
         "main sidebar" auto
         "footer footer" 10vw/80% 20%;
-        @media(max-width:961px){
+        @include breakpoint(pc){
             grid-template: 
                 "header" 30vw
                 "main" auto

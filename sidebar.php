@@ -4,7 +4,7 @@
         
             <!--スマホ用-->    
             <button class="c-button__close">
-                <img src="images/icon_close.png" alt="">       
+                <img src="<?= get_template_directory_uri(); ?>/images/icon_close.png" alt="">       
             </button>
             <!---->
 

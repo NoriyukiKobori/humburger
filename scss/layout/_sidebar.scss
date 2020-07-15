@@ -1,7 +1,19 @@
 .l-sidebar{
+    display: none;
+    @include breakpoint(wide){
+        display: block;
+    }
     h2{
         color: #707070;
         margin-top: 5vw;
         margin-left: 2vw;
+    }
+    &.is-open{
+        display: block;
+        width: 0;
+        height: 0;
+        h2{
+            font-size: 0;
+        }
     }
 }

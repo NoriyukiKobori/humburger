@@ -3,9 +3,11 @@ jQuery(document).ready(function(){
             let timer = 0 //変数名 timerを定義
             jQuery('.c-button__menu').on('click', function(){
                 $(".p-container__sidebar-menu").addClass("is-open"); //クラス.p-container__sidebarにクラスis-openを追加
+                $(".l-sidebar").addClass("is-open"); 
             });
             jQuery('.c-button__close img').on('click', function(){
-                $( ".p-container__sidebar-menu").removeClass( "is-open" );   
+                $( ".p-container__sidebar-menu").removeClass( "is-open" );
+                $(".l-sidebar").removeClass("is-open"); 
             });
             $(window).on("resize", function(){
                 let pcWidth = 961;
@@ -16,6 +18,7 @@ jQuery(document).ready(function(){
                     let resizeWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
                     if( resizeWidth >= pcWidth){
                         $( ".p-container__sidebar-menu").removeClass( "is-open" );
+                        $(".l-sidebar").removeClass( "is-open" );
                     }
                 }, 200 );
             });
