@@ -3,23 +3,25 @@
         width: 90%;
         margin: 5% 5% 5% 5%;
     }
-    h2{ 
-        color: white;
-        font-size: 5vw;
+    .p-articles__branch__box{ 
         position: absolute;
-        top: 2%;
-        left: 8%;
-    }
-    h3{
-        font-size: 2vw;
-        color: black;
-    }
-    hr{
-        position: absolute;
-        top:10%;
-        left: 8%;
-        width: 20%;
-        height: 5px;
+        top: 0;
+        padding: 8%;
+        h2{
+            font-size: 12rem;
+            @include breakpoint(tablet){
+                font-size: 5.5rem;
+            }
+        }
+        hr{
+            width: 12rem;
+            height: 2rem;
+            @include breakpoint(tablet){
+                width: 7rem;
+                height: 1rem;
+            }
+            
+        }
     }
     div{
         position: absolute;

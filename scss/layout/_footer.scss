@@ -6,16 +6,28 @@
     background-image: url("../images/index_img05.jpg");
     background-size: cover;
     &__menu{
-        height: 10vw;
         display: inline-block;
-        line-height: 5vw;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        @include breakpoint(tablet){
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
         li{
-            font-size: 1.4vw;
+            font-size: 3.5rem;
             list-style: none;
+            @include breakpoint(tablet){
+                font-size: 1.7rem;
+            }
         }
     }
     &__copyright{
-        font-size: 1.2vw;
+        margin-top: 2rem;
+        font-size: 3.2rem;
         font-style: normal;
+        @include breakpoint(tablet){
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
     }
 }

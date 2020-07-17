@@ -1,17 +1,18 @@
 html{
     font-family: 'mplus-1m-regular';
+    font-size: 1vw;
 }
 body{
     display: grid;
     grid-template:
         "header" 30vw
         "main" auto
-        "footer" 25vw/100%;
+        "footer" auto/100%;
     @include breakpoint(wide){
         grid-template: 
             "header sidebar" 12vw
             "main sidebar" auto
-            "footer footer" 10vw/80% 20%;
+            "footer footer" auto/80% 20%;
     }           
     header{
         grid-area: header;
@@ -32,16 +33,26 @@ body{
 }
 h1{
     font-family: 'Roboto', sans-serif;
-    font-size: 8vw;
     color: #707070;
+    font-size: 8rem;
+    @include breakpoint(wide){
+        font-size: 5rem;
+    }
 }
 h2{
-    font-size: 2vw;
+    font-size: 6rem;
+    color: white;
+    @include breakpoint(tablet){
+        font-size: 2.5rem;
+    }
 }
 h3{
     font-family: 'Roboto', sans-serif;
-    font-size: 7vw;
+    font-size: 5rem;
     color: white;
+    @include breakpoint(tablet){
+        font-size: 2.5rem;
+    }
 }
 h4{
     font-size: 1.6vw;
@@ -51,18 +62,23 @@ h4{
 hr{
     background-color: white;
     border: none;
+    width: 10rem;
+    height: 1rem;
 }
 a{
     cursor: pointer;
     text-decoration: none;
 }
-dt{
-    font-size: 2vw;
-}
 dd{
-    font-size: 1.8vw;
+    font-size: 4.5rem;
     margin-top: 2px;
+    @include breakpoint(tablet){
+        font-size: 2.0rem;
+    }
 }
 p{
-    font-size: 1vw;
+    font-size: 2.5rem;
+    @include breakpoint(tablet){
+        font-size: 1.3rem;
+    }
 }
