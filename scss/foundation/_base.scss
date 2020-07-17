@@ -2,6 +2,9 @@ html{
     font-family: 'mplus-1m-regular';
     font-size: 1vw;
 }
+.no-scroll{
+    overflow: hidden;    
+}
 body{
     display: grid;
     grid-template:

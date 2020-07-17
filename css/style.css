@@ -3,6 +3,10 @@ html {
   font-size: 1vw;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 body {
   display: -ms-grid;
   display: grid;
@@ -508,7 +512,7 @@ p {
           flex-direction: column;
   height: 100vh;
   overflow-y: scroll;
-  width: 70vw;
+  width: 80vw;
   position: absolute;
   top: 0;
   right: 0;
@@ -525,6 +529,7 @@ p {
   margin-top: 3%;
   padding-left: 5%;
   color: #707070;
+  font-size: 6rem;
 }
 
 @media (min-width: 641px) {
@@ -544,11 +549,11 @@ p {
 }
 
 .p-container__sidebar-menu ul li {
-  margin-top: 1.5%;
+  margin-top: 2.5%;
   padding-left: 10%;
   list-style: none;
   color: #707070;
-  font-size: 3.5rem;
+  font-size: 5rem;
 }
 
 @media (min-width: 641px) {

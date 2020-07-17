@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(  ); ?>
 </head>
-<body <?php body_class();?>>
+<body class="content" <?php body_class();?>>
     <header class="l-header">
         <a href="<?= esc_url( home_url( '/' ) ) ?>"><h1><?php bloginfo('name'); ?></h1></a>
  
