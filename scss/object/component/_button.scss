@@ -20,16 +20,15 @@
         background-color: #F2EDE9;
     }
     &__menu{
-        display: none;
-        @include breakpoint(pc){
-            display: block;
-            position: absolute;
-            top: 1px;
-            right: 2%;
-            padding-right: 2vw; 
-            color: #707070;
-            font-size: 3.5vw;
-            cursor: pointer;
+        position: absolute;
+        top: 1px;
+        right: 2%;
+        padding-right: 2vw; 
+        color: #707070;
+        font-size: 3.5vw;
+        cursor: pointer;
+        @include breakpoint(wide){
+            display: none;
         }    
     }
     &__close{

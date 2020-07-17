@@ -5,12 +5,12 @@ html {
 body {
   display: -ms-grid;
   display: grid;
-  grid-template: "header sidebar" 12vw "main sidebar" auto "footer footer" 10vw/80% 20%;
+  grid-template: "header" 30vw "main" auto "footer" 25vw/100%;
 }
 
-@media (max-width: 961px) {
+@media (min-width: 962px) {
   body {
-    grid-template: "header" 30vw "main" auto "footer" 25vw/100%;
+    grid-template: "header sidebar" 12vw "main sidebar" auto "footer footer" 10vw/80% 20%;
   }
 }
 
@@ -36,7 +36,7 @@ body .l-sidebar {
 
 h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 4vw;
+  font-size: 8vw;
   color: #707070;
 }
 
@@ -113,16 +113,17 @@ p {
 
 .l-header h1 {
   position: absolute;
+  text-align: center;
   width: 100%;
   top: 25%;
-  margin-left: 5%;
+  margin-left: 0;
 }
 
-@media (max-width: 961px) {
+@media (min-width: 962px) {
   .l-header h1 {
-    text-align: center;
-    margin-left: 0;
-    font-size: 8vw;
+    font-size: 4vw;
+    text-align: left;
+    margin-left: 5%;
   }
 }
 
@@ -175,19 +176,18 @@ p {
 }
 
 .c-button__menu {
-  display: none;
+  position: absolute;
+  top: 1px;
+  right: 2%;
+  padding-right: 2vw;
+  color: #707070;
+  font-size: 3.5vw;
+  cursor: pointer;
 }
 
-@media (max-width: 961px) {
+@media (min-width: 962px) {
   .c-button__menu {
-    display: block;
-    position: absolute;
-    top: 1px;
-    right: 2%;
-    padding-right: 2vw;
-    color: #707070;
-    font-size: 3.5vw;
-    cursor: pointer;
+    display: none;
   }
 }
 
@@ -211,12 +211,12 @@ p {
   background-color: black;
   margin-bottom: 2%;
   width: 100%;
-  height: 15vw;
+  height: 35vw;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 641px) {
   .p-hero {
-    height: 35vw;
+    height: 15vw;
   }
 }
 
@@ -342,12 +342,12 @@ p {
   background-color: black;
   position: relative;
   width: 100%;
-  height: 40vw;
+  height: 100vw;
 }
 
-@media (max-width: 769px) {
+@media (min-width: 641px) {
   .p-access {
-    height: 100vw;
+    height: 40vw;
   }
 }
 
@@ -363,17 +363,17 @@ p {
 .p-access div {
   position: absolute;
   top: 0;
-  width: 60%;
-  height: 100%;
+  width: 100%;
+  height: 60%;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 2%;
 }
 
-@media (max-width: 769px) {
+@media (min-width: 641px) {
   .p-access div {
-    width: 100%;
-    height: 60%;
+    width: 60%;
+    height: 100%;
   }
 }
 
@@ -399,18 +399,19 @@ p {
   position: absolute;
   right: 0;
   bottom: 15%;
-  width: 30vw;
+  width: 100%;
   font-size: 1.5vw;
-  height: 3vw;
-  margin: 2vw 0;
+  height: 5vw;
+  margin: 0 auto;
+  padding: 0 20% 0 22%;
 }
 
-@media (max-width: 961px) {
+@media (min-width: 962px) {
   .p-search-form {
-    margin: 0 auto;
-    padding: 0 20% 0 22%;
-    width: 100%;
-    height: 5vw;
+    margin: 2vw 0;
+    width: 30vw;
+    height: 3vw;
+    padding: 0;
   }
 }
 

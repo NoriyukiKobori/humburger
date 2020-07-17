@@ -42,7 +42,7 @@
         }
     }
 
-    @include breakpoint(phonem){
+    @include breakpoint(tablet){
         &__branch{
             display: grid;
             grid-template: 

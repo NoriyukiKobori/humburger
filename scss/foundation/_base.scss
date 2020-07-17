@@ -3,16 +3,16 @@ html{
 }
 body{
     display: grid;
-    grid-template: 
-        "header sidebar" 12vw
-        "main sidebar" auto
-        "footer footer" 10vw/80% 20%;
-        @include breakpoint(pc){
-            grid-template: 
-                "header" 30vw
-                "main" auto
-                "footer" 25vw/100%;
-        }
+    grid-template:
+        "header" 30vw
+        "main" auto
+        "footer" 25vw/100%;
+    @include breakpoint(wide){
+        grid-template: 
+            "header sidebar" 12vw
+            "main sidebar" auto
+            "footer footer" 10vw/80% 20%;
+    }           
     header{
         grid-area: header;
         background-color: #fff7fe; 
@@ -32,7 +32,7 @@ body{
 }
 h1{
     font-family: 'Roboto', sans-serif;
-    font-size: 4vw;
+    font-size: 8vw;
     color: #707070;
 }
 h2{
