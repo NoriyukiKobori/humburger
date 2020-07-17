@@ -42,19 +42,17 @@
         }    
     }
     &__close{
-        img{
-            display: block;
-            color: #707070;
-            cursor: pointer;
-            width: 3vw;
-            position: absolute;
-            top: 3rem;
-            right: 3rem;            
-            @include breakpoint(wide){
-                display: none;        
+        #close-button{
+            display: none;
+            &.is-open{
+                display: block;
+                color: #707070;
+                cursor: pointer;
+                width: 3vw;
+                position: absolute;
+                top: 3rem;
+                right: 3rem;
             }
-        }
-        
+        } 
     }
-
 }

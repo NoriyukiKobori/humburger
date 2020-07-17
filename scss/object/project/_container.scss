@@ -1,11 +1,16 @@
 .p-container{
     &__sidebar-menu{
+        overflow: hidden;
+        width: 0;
         background-color: #F2EDE9;
         margin-left: 10%;
         padding-top: 5rem;
+        @include breakpoint(wide){
+            width: 100%;
+        }
         &.is-open{
-            display: flex;
-            flex-direction: column;
+            width: 100%;
+            transition: .5s;
             height: 100vh;
             overflow-y: scroll;
             width: 80vw;

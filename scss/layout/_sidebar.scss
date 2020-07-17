@@ -1,7 +1,11 @@
 .l-sidebar{
-    display: none;
+    overflow: hidden;
+    width: 0;
+    height: 0;
     @include breakpoint(wide){
-        display: block;
+        overflow: visible;
+        width: 100%;
+        height: 100%;
     }
     h2{
         color: #707070;
@@ -9,7 +13,7 @@
         margin-left: 2vw;
     }
     &.is-open{
-        display: block;
+        overflow: visible;
         width: 0;
         height: 0;
         h2{

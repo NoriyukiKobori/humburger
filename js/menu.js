@@ -4,11 +4,13 @@ jQuery(document).ready(function(){
             jQuery('.c-button__menu').on('click', function(){
                 $(".p-container__sidebar-menu").addClass("is-open"); //クラス.p-container__sidebarにクラスis-openを追加
                 $(".l-sidebar").addClass("is-open"); 
+                $("#close-button").addClass("is-open");
                 $(".content").addClass("no-scroll"); 
             });
             jQuery('.c-button__close img').on('click', function(){
                 $( ".p-container__sidebar-menu").removeClass( "is-open" );
                 $(".l-sidebar").removeClass("is-open"); 
+                $("#close-button").removeClass("is-open"); 
                 $(".content").removeClass("no-scroll");
             });
             $(window).on("resize", function(){
@@ -21,6 +23,7 @@ jQuery(document).ready(function(){
                     if( resizeWidth >= pcWidth){
                         $( ".p-container__sidebar-menu").removeClass( "is-open" );
                         $(".l-sidebar").removeClass( "is-open" );
+                        $("#close-button").removeClass("is-open"); 
                         $(".content").removeClass("no-scroll");
                     }
                 }, 200 );
