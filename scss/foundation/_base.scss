@@ -1,6 +1,5 @@
 html{
     font-family: 'mplus-1m-regular';
-    background-color: firebrick;
 }
 body{
     display: grid;
@@ -20,6 +19,7 @@ body{
     }
     main{
         grid-area: main;
+        background-color: white;
     }
     footer{
         grid-area: footer;

@@ -1,6 +1,5 @@
 html {
   font-family: 'mplus-1m-regular';
-  background-color: firebrick;
 }
 
 body {
@@ -22,6 +21,7 @@ body header {
 
 body main {
   grid-area: main;
+  background-color: white;
 }
 
 body footer {
@@ -186,6 +186,7 @@ p {
     right: 2%;
     padding-right: 2vw;
     color: #707070;
+    font-size: 3.5vw;
     cursor: pointer;
   }
 }
@@ -230,6 +231,14 @@ p {
 .p-hero h1 {
   position: absolute;
   color: white;
+  font-size: 3vw;
+  top: 45%;
+  left: 5%;
+}
+
+.p-hero h2 {
+  position: absolute;
+  color: white;
   font-size: 2vw;
   top: 45%;
   left: 5%;
@@ -244,12 +253,17 @@ p {
   margin: 5% 5% 5% 5%;
 }
 
-.p-articles__branch__left h1 {
+.p-articles__branch__left h2 {
   color: white;
   font-size: 5vw;
   position: absolute;
   top: 2%;
   left: 8%;
+}
+
+.p-articles__branch__left h3 {
+  font-size: 2vw;
+  color: black;
 }
 
 .p-articles__branch__left hr {
@@ -279,12 +293,17 @@ p {
   margin: 5% 5% 5% 5%;
 }
 
-.p-articles__branch__right h1 {
+.p-articles__branch__right h2 {
   color: white;
   font-size: 5vw;
   position: absolute;
   top: 2%;
   left: 8%;
+}
+
+.p-articles__branch__right h3 {
+  font-size: 2vw;
+  color: black;
 }
 
 .p-articles__branch__right hr {
@@ -411,8 +430,9 @@ p {
   background-size: cover;
 }
 
-.p-container__sidebar-menu h4 {
+.p-container__sidebar-menu h3 {
   color: #707070;
+  font-size: 1.5vw;
   margin-top: 3vw;
   margin-left: 2vw;
 }

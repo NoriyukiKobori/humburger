@@ -21,3 +21,5 @@
         wp_enqueue_script('menu', get_template_directory_uri() . '/js/menu.js', array('jquery'),true);
     }
     add_action('wp_enqueue_scripts', 'humburger_script');
+
+    add_filter( 'show_admin_bar', '__return_false' );
