@@ -273,7 +273,8 @@ p {
   cursor: pointer;
   width: 3vw;
   position: absolute;
-  right: 1%;
+  top: 3rem;
+  right: 3rem;
 }
 
 @media (min-width: 962px) {
@@ -494,18 +495,30 @@ p {
 .p-container__sidebar-menu {
   background-color: #F2EDE9;
   margin-left: 10%;
-  -webkit-transition-duration: 3s;
-          transition-duration: 3s;
+  padding-top: 5rem;
 }
 
 .p-container__sidebar-menu.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  overflow-y: scroll;
   width: 70vw;
-  height: 100%;
   position: absolute;
   top: 0;
   right: 0;
   background-size: cover;
+}
+
+@media (min-width: 641px) {
+  .p-container__sidebar-menu.is-open {
+    width: 40vw;
+  }
 }
 
 .p-container__sidebar-menu h3 {
