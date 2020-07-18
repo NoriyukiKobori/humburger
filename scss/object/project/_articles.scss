@@ -1,3 +1,37 @@
+@mixin box {
+    img{
+        width: 90%;
+        margin: 5% 5% 5% 5%;
+    }
+    .p-articles__branch__box{ 
+        position: absolute;
+        top: 0;
+        padding: 8%;
+        h2{
+            font-size: 12rem;
+            @include breakpoint(tablet){
+                font-size: 5.5rem;
+            }
+        }
+        hr{
+            width: 12rem;
+            height: 2rem;
+            @include breakpoint(tablet){
+                width: 7rem;
+                height: 1rem;
+            }
+            
+        }
+    }
+    div{
+        position: absolute;
+        bottom:2%;
+        dl{
+            background-color: rgba(255, 255, 255, 0.5);
+            margin: 0 7% 7% 7%;
+        }    
+    }
+}
 .p-articles{
     &__branch{
         &__left{
@@ -10,7 +44,7 @@
         }
     }
 
-    @include breakpoint(phonem){
+    @include breakpoint(tablet){
         &__branch{
             display: grid;
             grid-template: 

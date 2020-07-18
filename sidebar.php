@@ -4,11 +4,11 @@
         
             <!--スマホ用-->    
             <button class="c-button__close">
-                <img src="images/icon_close.png" alt="">       
+                <img id="close-button" src="<?= get_template_directory_uri(); ?>/images/icon_close.png" alt="">       
             </button>
             <!---->
 
-            <a href="archive.php"><h4>バーガー</h4></a>
+            <a href="archive.php"><h3>バーガー</h3></a>
             <ul>
                 <li>ハンバーガー</li>
                 <li>チーズバーガー</li>
@@ -18,14 +18,14 @@
                 <li>ベーコンバーガー</li>
                 <li>チキンバーガー</li>
             </ul>
-            <h4>サイド</h4>
+            <h3>サイド</h3>
             <ul>
                 <li>ポテト</li>
                 <li>サラダ</li>
                 <li>ナゲット</li>
                 <li>コーン</li>
             </ul>
-            <h4>ドリンク</h4>
+            <h3>ドリンク</h3>
             <ul>
                 <li>コーラ</li>
                 <li>ファンタ</li>

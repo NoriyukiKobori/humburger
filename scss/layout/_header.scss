@@ -6,13 +6,13 @@
     
     h1{
         position: absolute;
+        text-align: center;
         width: 100%;
         top: 25%;
-        margin-left: 5%;
-        @include breakpoint(pc){
-            text-align: center;
-            margin-left: 0;
-            font-size: 8vw;
+        margin-left: 0;
+        @include breakpoint(wide){
+            text-align: left;
+            margin-left: 5%;  
         }
     }
 }

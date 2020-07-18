@@ -1,24 +1,29 @@
 html{
     font-family: 'mplus-1m-regular';
+    font-size: 1vw;
+}
+.no-scroll{
+    overflow: hidden;    
 }
 body{
     display: grid;
-    grid-template: 
-        "header sidebar" 12vw
-        "main sidebar" auto
-        "footer footer" 10vw/80% 20%;
-        @media(max-width:961px){
-            grid-template: 
-                "header" 30vw
-                "main" auto
-                "footer" 25vw/100%;
-        }
+    grid-template:
+        "header" 30vw
+        "main" auto
+        "footer" auto/100%;
+    @include breakpoint(wide){
+        grid-template: 
+            "header sidebar" 12vw
+            "main sidebar" auto
+            "footer footer" auto/80% 20%;
+    }           
     header{
         grid-area: header;
         background-color: #fff7fe; 
     }
     main{
         grid-area: main;
+        background-color: white;
     }
     footer{
         grid-area: footer;
@@ -28,19 +33,43 @@ body{
         grid-area: sidebar;
         background-color: #F2EDE9;
     }
+    #smoke-layer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.5;
+        visibility: hidden;
+        z-index: 1;
+        &.is-open{
+            visibility: visible;
+        }
+    }
 }
 h1{
     font-family: 'Roboto', sans-serif;
-    font-size: 4vw;
     color: #707070;
+    font-size: 8rem;
+    @include breakpoint(wide){
+        font-size: 5rem;
+    }
 }
 h2{
-    font-size: 2vw;
+    font-size: 6rem;
+    color: white;
+    @include breakpoint(tablet){
+        font-size: 2.5rem;
+    }
 }
 h3{
     font-family: 'Roboto', sans-serif;
-    font-size: 7vw;
+    font-size: 5rem;
     color: white;
+    @include breakpoint(tablet){
+        font-size: 2.5rem;
+    }
 }
 h4{
     font-size: 1.6vw;
@@ -50,18 +79,23 @@ h4{
 hr{
     background-color: white;
     border: none;
+    width: 10rem;
+    height: 1rem;
 }
 a{
     cursor: pointer;
     text-decoration: none;
 }
-dt{
-    font-size: 2vw;
-}
 dd{
-    font-size: 1.8vw;
+    font-size: 4.5rem;
     margin-top: 2px;
+    @include breakpoint(tablet){
+        font-size: 2.0rem;
+    }
 }
 p{
-    font-size: 1vw;
+    font-size: 2.5rem;
+    @include breakpoint(tablet){
+        font-size: 1.3rem;
+    }
 }
