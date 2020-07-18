@@ -9,6 +9,6 @@
         
         <!-- <script src="jquery.min.js"></script> -->
         <!-- <script src="menu.js"></script> -->
-        
+        <div id="smoke-layer"></div>    
     </body>
 </html>

@@ -5,6 +5,7 @@
         background-color: #F2EDE9;
         margin-left: 10%;
         padding-top: 5rem;
+        z-index: 2;
         @include breakpoint(wide){
             width: 100%;
         }

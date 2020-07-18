@@ -39,6 +39,22 @@ body .l-sidebar {
   background-color: #F2EDE9;
 }
 
+body #smoke-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.5;
+  visibility: hidden;
+  z-index: 1;
+}
+
+body #smoke-layer.is-open {
+  visibility: visible;
+}
+
 h1 {
   font-family: 'Roboto', sans-serif;
   color: #707070;
@@ -504,6 +520,7 @@ p {
   background-color: #F2EDE9;
   margin-left: 10%;
   padding-top: 5rem;
+  z-index: 2;
 }
 
 @media (min-width: 962px) {
