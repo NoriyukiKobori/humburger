@@ -305,6 +305,29 @@ p {
   right: 3rem;
 }
 
+.c-button__to-page {
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  bottom: 5rem;
+}
+
+@media (min-width: 641px) {
+  .c-button__to-page {
+    bottom: 3.5rem;
+  }
+}
+
+.c-button__to-page-button {
+  background-color: white;
+  color: #707070;
+  width: 35%;
+  height: 100%;
+  border-radius: 20px;
+}
+
 .p-hero {
   position: relative;
   background-color: black;
@@ -327,10 +350,28 @@ p {
   vertical-align: bottom;
 }
 
+.p-hero h1 {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  color: white;
+}
+
 .p-hero h2 {
   position: absolute;
   top: 40%;
   left: 5%;
+}
+
+.p-articles__text-area {
+  color: #3C2A10;
+  width: 90%;
+  margin: 3rem auto 3rem auto;
+}
+
+.p-articles__text-area h2 {
+  color: #3C2A10;
+  font-weight: lighter;
 }
 
 .p-articles__branch__left {
@@ -588,6 +629,85 @@ p {
 @media (min-width: 962px) {
   .p-container__sidebar-menu ul li {
     font-size: 1.6rem;
+  }
+}
+
+.p-card {
+  width: 90%;
+  margin: 5rem auto 5rem auto;
+}
+
+@media (min-width: 641px) {
+  .p-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.p-card__img {
+  width: 100%;
+  height: 50rem;
+}
+
+@media (min-width: 641px) {
+  .p-card__img {
+    width: 50%;
+    height: 30rem;
+  }
+}
+
+.p-card__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-card__text-area {
+  width: 100%;
+  background-color: #3C2B1C;
+  color: white;
+  height: 70rem;
+  position: relative;
+}
+
+@media (min-width: 641px) {
+  .p-card__text-area {
+    width: 50%;
+    height: 30rem;
+  }
+}
+
+.p-card__text-area h3 {
+  color: white;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+  padding: 3rem;
+}
+
+@media (min-width: 641px) {
+  .p-card__text-area h3 {
+    margin-bottom: 1rem;
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+  }
+}
+
+.p-card__text-area p {
+  font-size: 3.5rem;
+  line-height: 5.5rem;
+  padding: 3rem;
+}
+
+@media (min-width: 641px) {
+  .p-card__text-area p {
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

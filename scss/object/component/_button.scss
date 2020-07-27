@@ -55,4 +55,22 @@
             }
         } 
     }
+    &__to-page{
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        height: 15%;
+        position: absolute;
+        bottom: 5rem;
+        @include breakpoint(tablet){
+            bottom: 3.5rem;
+        }
+        &-button{
+            background-color: white;
+            color: #707070;
+            width: 35%;
+            height: 100%;
+            border-radius: 20px;
+        }
+    }
 }

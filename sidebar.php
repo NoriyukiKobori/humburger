@@ -8,6 +8,8 @@
             </button>
             <!---->
 
+            <?php wp_nav_menu(); ?>
+
             <a href="archive.php"><h3>バーガー</h3></a>
             <ul>
                 <li>ハンバーガー</li>
