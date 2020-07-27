@@ -33,6 +33,16 @@
     }
 }
 .p-articles{
+    &__text-area{
+        color:#3C2A10;
+        width: 90%;
+        margin: 3rem auto 3rem auto;
+        h2{
+            color:#3C2A10;
+            font-weight: lighter;
+        }
+
+    }
     &__branch{
         &__left{
             position: relative;
