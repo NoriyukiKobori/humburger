@@ -1,10 +1,8 @@
-<?php 
-    get_header(); 
-?>
+<?php get_header(); ?>
 
     <main class="l-main">
         <section class="p-hero">
-        <?php the_post_thumbnail(); ?>
+            <?php the_post_thumbnail(); ?>
             <h1 class=p-hero__category>
                 <?php 
                     if(have_posts()){
@@ -13,20 +11,21 @@
                 ?>
             </h1>
         </section>
-        <article class="p-articles">          
-
-            <?php
-                if(have_posts()):
-
-                        the_post(); ?>
-                <p><?php the_content(); ?></p>
-
-                <? else:
-                    ?><p>表示する記事がありません</p><?php
-                endif;
-            ?>
-            
-
+        <article class="p-articles">
+            <div class="p-articles__single-content">  
+                <?php
+                    if(have_posts()):
+                        while(have_posts(  )):
+                            the_post(  );
+                            the_content();
+                        endwhile;
+                    else:
+                ?>
+                        <p>表示する記事がありません</p>
+                <?php
+                    endif;
+                ?>
+            </div>
     </main>
 
 <?php get_footer(); ?>

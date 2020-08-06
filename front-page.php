@@ -9,7 +9,7 @@
                 <div class="p-articles__branch__left">
                     <img src="<?= get_template_directory_uri(); ?>/images/index_img02.jpg" alt="">
                     <div class="p-articles__branch__box">
-                        <h2>Takeout</h2>
+                        <a href=<?= get_category_link(8); ?>><h2><?= get_cat_name(8); ?></h2></a>
                         <hr>
                     </div>
                     <div>
@@ -26,7 +26,7 @@
                 <div class="p-articles__branch__right">
                     <img src="<?= get_template_directory_uri(); ?>/images/index_img03.jpg" alt="">
                     <div class="p-articles__branch__box">
-                        <h2>EatIn</h2>
+                    <a href=<?= get_category_link(7); ?>><h2><?= get_cat_name(7); ?></h2></a>
                         <hr>
                     </div>
                     <div>
