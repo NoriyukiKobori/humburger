@@ -24,4 +24,10 @@
         top: 40%;
         left: 5%;
     }
+    &__category{
+        @include breakpoint(tablet){
+            height: 15vw;
+            font-size: 3.5rem;
+        }
+    }
 }

@@ -67,4 +67,25 @@
             }
         }
     }
+    &__single-content{
+        
+    }
+    &__navigation{
+        text-align: center;
+        margin: 3rem 0 3rem 0;
+        font-size: 5rem;
+        @include breakpoint(tablet){
+            font-size: 2rem;
+        }
+        a{
+            color: #3C2A10;
+        }
+        .pages , .nextpostslink , .previouspostslink{
+            border: none;
+        }
+        .page:hover{
+            background-color: #3C2A10;
+            color: white;
+        }
+    }
 }

@@ -7,7 +7,7 @@
 </head>
 <body class="content" <?php body_class();?>>
     <header class="l-header">
-        <a href="<?= esc_url( home_url( '/' ) ) ?>"><h1><?php bloginfo('name'); ?></h1></a>
+        <a href="<?php echo esc_url( home_url( '/' ) ) ?>"><h1><?php bloginfo('name'); ?></h1></a>
  
         <!--スマホ用-->    
         <button class="c-button__menu">Menu</button>

@@ -19,6 +19,9 @@
             @include breakpoint(tablet){
                 font-size: 1.7rem;
             }
+            a{
+                color: white;
+            }
         }
     }
     &__copyright{

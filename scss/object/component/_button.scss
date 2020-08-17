@@ -58,20 +58,25 @@
     }
     &__to-page{
         text-align: center;
+        font-size: 3.5rem;
         margin: 0;
         width: 100%;
         height: 15%;
         position: absolute;
-        bottom: 5rem;
+        bottom: 3rem;
         @include breakpoint(tablet){
-            bottom: 3.5rem;
+            bottom: 2rem;
         }
         &-button{
             background-color: white;
             color: #707070;
+            font-size: 4rem;
             width: 35%;
             height: 100%;
             border-radius: 20px;
+            @include breakpoint(tablet){
+                font-size: 1.5rem;
+            }
         }
     }
 }
