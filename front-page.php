@@ -1,15 +1,15 @@
 <?php get_header(); ?>
     <main class="l-main">
         <section class="p-hero">
-            <img src="<?= get_template_directory_uri(); ?>/images/index_img01.jpg" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/index_img01.jpg" alt="">
             <h2>ダミーサイト</h2>
         </section>
         <article class="p-articles">
             <div class="p-articles__branch">
                 <div class="p-articles__branch__left">
-                    <img src="<?= get_template_directory_uri(); ?>/images/index_img02.jpg" alt="">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/index_img02.jpg" alt="">
                     <div class="p-articles__branch__box">
-                        <a href=<?= get_category_link(8); ?>><h2><?= get_cat_name(8); ?></h2></a>
+                        <a href=<?php echo get_category_link(8); ?>><h2><?php echo get_cat_name(8); ?></h2></a>
                         <hr>
                     </div>
                     <div>
@@ -24,9 +24,9 @@
                     </div>  
                 </div>
                 <div class="p-articles__branch__right">
-                    <img src="<?= get_template_directory_uri(); ?>/images/index_img03.jpg" alt="">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/index_img03.jpg" alt="">
                     <div class="p-articles__branch__box">
-                    <a href=<?= get_category_link(7); ?>><h2><?= get_cat_name(7); ?></h2></a>
+                    <a href=<?php echo get_category_link(7); ?>><h2><?php echo get_cat_name(7); ?></h2></a>
                         <hr>
                     </div>
                     <div>
@@ -43,7 +43,7 @@
             </div>
         </article>
         <section class="p-access">
-            <img src="<?= get_template_directory_uri(); ?>/images/index_img04.jpg" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/index_img04.jpg" alt="">
             <div>
                 <h2>見出しが入ります</h2>
                 <hr>

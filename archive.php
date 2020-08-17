@@ -2,7 +2,7 @@
 
     <main class="l-main">
         <section class="p-hero">
-            <img src="<?= get_template_directory_uri(); ?>/images/archive_img01.jpg" alt="ハンバーガーの写真">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/archive_img01.jpg" alt="ハンバーガーの写真">
             <h1 class=p-hero__category>Menu:
                 <?php
                     if(is_category()){
@@ -23,15 +23,17 @@
                     while(have_posts()): 
                         the_post(); 
             ?>
-                        <div class="p-card">
-                            <div class="p-card__img">
-                                <?php the_post_thumbnail(); ?>
-                            </div>
-                            <div class="p-card__text-area">
-                                <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                                <?php the_content(); ?>
-                                <div class="c-button__to-page">
-                                    <button class="c-button__to-page-button" onclick="location.href='<?php the_permalink(); ?>'">詳しく見る</button>
+                        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                            <div class="p-card">
+                                <div class="p-card__img">
+                                    <?php the_post_thumbnail(); ?>
+                                </div>
+                                <div class="p-card__text-area">
+                                    <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                                    <?php the_content(); ?>
+                                    <div class="c-button__to-page">
+                                        <button class="c-button__to-page-button" onclick="location.href='<?php the_permalink(); ?>'">詳しく見る</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -43,7 +45,11 @@
                     <p>表示する記事がありません</p>
             <?php
                 endif;
-            ?>       
+            ?>
+            <div class="p-articles__navigation">
+                <?php wp_pagenavi(); ?>
+            </div>
+        </article> 
     </main>
 
 <?php get_footer(); ?>

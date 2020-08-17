@@ -1,10 +1,11 @@
         <footer class="l-footer">
             <div class="l-footer__menu">
                     <ul>
-                        <li>ショップ情報｜ヒストリー</li>
+                    <li><a href=<?php echo get_page_link(5); ?>><?php echo get_the_title(5); ?></a>｜<a href=<?php echo get_page_link(79); ?>><?php echo get_the_title(79); ?></a></li>
                     </ul>
                     <address class="l-footer__copyright">Copyright: RaiseTech</address>            
             </div>
+            <?php wp_footer(); ?>
         </footer>  
         
         <!-- <script src="jquery.min.js"></script> -->

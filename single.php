@@ -15,9 +15,11 @@
             <div class="p-articles__single-content">  
                 <?php
                     if(have_posts()):
-                        while(have_posts(  )):
-                            the_post(  );
-                            the_content();
+                        while(have_posts(  )):?>
+                            <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>><?php
+                                the_post(  );
+                                the_content(); ?>
+                            </div> <?php
                         endwhile;
                     else:
                 ?>
@@ -26,6 +28,10 @@
                     endif;
                 ?>
             </div>
+            <div class="p-articles__navigation">
+                <?php wp_pagenavi(); ?>
+            </div>
+        </article> 
     </main>
 
 <?php get_footer(); ?>

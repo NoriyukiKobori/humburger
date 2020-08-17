@@ -3,7 +3,7 @@
         
             <!--スマホ用-->    
             <button class="c-button__close">
-                <img id="close-button" src="<?= get_template_directory_uri(); ?>/images/icon_close.png" alt="">       
+                <img id="close-button" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/icon_close.png" alt="">       
             </button>
             <!---->
 

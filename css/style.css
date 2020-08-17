@@ -162,6 +162,10 @@ p {
   }
 }
 
+.l-footer__menu li a {
+  color: white;
+}
+
 .l-footer__copyright {
   margin-top: 2rem;
   font-size: 3.2rem;
@@ -572,6 +576,31 @@ p {
   .p-articles__branch__right {
     grid-area: right;
   }
+}
+
+.p-articles__navigation {
+  text-align: center;
+  margin: 3rem 0 3rem 0;
+  font-size: 5rem;
+}
+
+@media (min-width: 641px) {
+  .p-articles__navigation {
+    font-size: 2rem;
+  }
+}
+
+.p-articles__navigation a {
+  color: #3C2A10;
+}
+
+.p-articles__navigation .pages, .p-articles__navigation .nextpostslink, .p-articles__navigation .previouspostslink {
+  border: none;
+}
+
+.p-articles__navigation .page:hover {
+  background-color: #3C2A10;
+  color: white;
 }
 
 .p-access {
