@@ -26,3 +26,9 @@
     add_action('wp_enqueue_scripts', 'humburger_script');
 
     add_filter( 'show_admin_bar', '__return_false' );
+
+    //メインメニューとサブメニューを使い分けれるようにする
+    register_nav_menus( array(
+        'mainmenu' =>__( 'Mein Menu', 'humburger' ),
+        'secondary' =>__( 'Sub Menu' , 'humburger' )
+    ));

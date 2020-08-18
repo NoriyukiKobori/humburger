@@ -16,12 +16,17 @@
         li{
             font-size: 3.5rem;
             list-style: none;
+            display: inline-block;
+            margin-right: 2rem;
             @include breakpoint(tablet){
                 font-size: 1.7rem;
             }
             a{
                 color: white;
             }
+        }
+        li:not(:first-child)::before{
+            content: "|　";
         }
     }
     &__copyright{

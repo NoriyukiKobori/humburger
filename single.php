@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
     <main class="l-main">
-        <section class="p-hero">
+        <section class="p-hero big">
             <?php the_post_thumbnail(); ?>
-            <h1 class=p-hero__category>
+            <h1 class=p-hero__title>
                 <?php 
                     if(have_posts()){
                         the_title();
