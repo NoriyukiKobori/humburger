@@ -2,8 +2,8 @@
 
     <main class="l-main">
         <section class="p-hero">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/archive_img01.jpg" alt="ハンバーガーの写真">
-            <h1 class=p-hero__category>Menu:
+            <img class="black" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/archive_img01.jpg" alt="ハンバーガーの写真">
+            <h1 class=p-hero__title>Menu:
                 <?php
                     if(is_category()){
                         echo single_cat_title(); 
@@ -46,8 +46,12 @@
             <?php
                 endif;
             ?>
-            <div class="p-articles__navigation">
+            <div class="p-articles__navigation pc">
                 <?php wp_pagenavi(); ?>
+            </div>
+            <div class="p-articles__navigation phone">
+                <div class="left"><button><?php previous_posts_link('<< 前へ'); ?></button></div>
+                <div class="right"><button><?php next_posts_link('次へ >>'); ?></button></div>
             </div>
         </article> 
     </main>

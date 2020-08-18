@@ -1,8 +1,6 @@
         <footer class="l-footer">
             <div class="l-footer__menu">
-                    <ul>
-                    <li><a href=<?php echo get_page_link(5); ?>><?php echo get_the_title(5); ?></a>｜<a href=<?php echo get_page_link(79); ?>><?php echo get_the_title(79); ?></a></li>
-                    </ul>
+                    <?php wp_nav_menu( array('theme_location' => 'secondary' , 'menu_class' => 'nav-menu')); ?>
                     <address class="l-footer__copyright">Copyright: RaiseTech</address>            
             </div>
             <?php wp_footer(); ?>

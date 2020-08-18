@@ -67,23 +67,158 @@
             }
         }
     }
-    &__single-content{
+    &__single-content , &__page-content{
+        width: 90%;
+        margin: 1rem auto 1rem auto;
+        color: #3C2A10;
+        h2 , h3 , h4 , p , ul ,blockquote{
+            margin: 2.5rem 0 2.5rem 0;
+        }
+        table{
+            margin: 5rem 0 5rem 0;
+            border-collapse: collapse;
+        }
+        th , td{
+            border: solid 1px #3C2A10;
+            padding: 1.5rem;
+        }
+        tr , td:nth-of-type(1){
+            width: 30%;
+        }
+        tr , td:nth-of-type(2){
+            width: 70%;
+        }
+        h2{
+            color: #3C2A10;
+            font-size: 5rem;
+            @include breakpoint(tablet){
+                font-size: 2.5rem;
+            }
+        }
+        h3{
+            color: #3C2A10;
+            font-size: 4.9rem;
+            @include breakpoint(tablet){
+                font-size: 2.4rem;
+            }
+        }
+        h4{
+            color: #3C2A10;
+            font-size: 4.7rem;
+            @include breakpoint(tablet){
+                font-size: 2.2rem;
+            }
+        }
+        p , li , table , blockquote {
+            font-size: 3.5rem;
+            @include breakpoint(tablet){
+                font-size: 2rem;
+            }
+        }
+        li{
+            list-style-position: inside;
+        }
+        img{
+            max-width: 100%;
+            width: auto;
+            height: auto;
+        }
+        .size-large{
+            margin: 3rem 0 3rem 0;
+            text-align: center;
+        }
+        .wp-block-media-text__media{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            &.alignwide{
+                img{
+                    margin: 2rem 2rem 2rem 0;
+                }
+            }
+            &.right{
+                imag{
+                    margin: 2rem 0 2rem 2rem;
+                }
+            }
+            
+        }
+        
+        .wp-block-gallery{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        blockquote{
+            background-color: #F5F5F5;
+            padding: 2.5rem;
+            cite{
+                font-size: 2.5rem;
+                font-style: normal;
+                @include breakpoint(tablet){
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .wp-block-button{
+            width: 100%;
+            &__link{
+                width: 100%;
+                color: #3C2A10;
+                border: solid thin #707070;
+                background-color: #F2EDE9;
+                @include breakpoint(tablet){
+                    width: 30%;
+                }
+            }
+        }
+
         
     }
     &__navigation{
         text-align: center;
         margin: 3rem 0 3rem 0;
         font-size: 5rem;
+        &.phone{
+            display: flex;
+            justify-content: space-between;
+            .left{
+                text-align: left;
+                width: 30%;
+                margin-left: 5%;
+            }
+            .right{
+                text-align: right;
+                width: 30%;
+                margin-right: 5%;
+            }
+
+        }
+        &.pc{
+            display: none;
+        }
         @include breakpoint(tablet){
             font-size: 2rem;
+            &.phone{
+                display: none;
+                justify-content: space-between;
+            }
+            &.pc{
+                display: block;
+            }
         }
         a{
             color: #3C2A10;
         }
         .pages , .nextpostslink , .previouspostslink{
             border: none;
+            color: #3C2A10;
         }
         .page:hover{
+            background-color: #FFF7EF;
+            color: #3C2A10;
+        }
+        .current{
             background-color: #3C2A10;
             color: white;
         }
