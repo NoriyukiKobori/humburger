@@ -3,7 +3,7 @@
     register_nav_menus();
     add_theme_support('title-tag');
     add_theme_support( 'post-thumbnails' );
-    add_theme_support( 'automatic-feed-links' );
+    add_theme_support( 'automatic-feed-links' ); //RSSのフィードリンクを有効にする
 
     function humburger_title($title){
         if(is_front_page() && is_home()){
@@ -32,3 +32,10 @@
         'mainmenu' =>__( 'Mein Menu', 'humburger' ),
         'secondary' =>__( 'Sub Menu' , 'humburger' )
     ));
+
+    //theme checkエラー回避
+
+    if ( ! isset( $content_width ) ) {
+        $content_width = 960;
+    }
+

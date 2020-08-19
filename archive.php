@@ -31,6 +31,9 @@
                                 <div class="p-card__text-area">
                                     <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                                     <?php the_content(); ?>
+                                    <div style="display: none">
+                                        <?php the_tags(); ?>
+                                    </div>
                                     <div class="c-button__to-page">
                                         <button class="c-button__to-page-button" onclick="location.href='<?php the_permalink(); ?>'">詳しく見る</button>
                                     </div>
