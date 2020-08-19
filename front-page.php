@@ -43,7 +43,7 @@
             </div>
         </article>
         <section class="p-access">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/index_img04.jpg" alt="">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/index_img04.jpg" alt="地図画像">
             <div>
                 <h2>見出しが入ります</h2>
                 <hr>
