@@ -606,7 +606,7 @@ p {
   color: #3C2A10;
 }
 
-.p-articles__single-content h2, .p-articles__single-content h3, .p-articles__single-content h4, .p-articles__single-content p, .p-articles__single-content ul, .p-articles__single-content blockquote, .p-articles__page-content h2, .p-articles__page-content h3, .p-articles__page-content h4, .p-articles__page-content p, .p-articles__page-content ul, .p-articles__page-content blockquote {
+.p-articles__single-content h2, .p-articles__single-content h3, .p-articles__single-content h4, .p-articles__single-content p, .p-articles__single-content ul, .p-articles__single-content ol, .p-articles__single-content blockquote, .p-articles__page-content h2, .p-articles__page-content h3, .p-articles__page-content h4, .p-articles__page-content p, .p-articles__page-content ul, .p-articles__page-content ol, .p-articles__page-content blockquote {
   margin: 2.5rem 0 2.5rem 0;
 }
 
@@ -669,6 +669,11 @@ p {
   .p-articles__single-content p, .p-articles__single-content li, .p-articles__single-content table, .p-articles__single-content blockquote, .p-articles__page-content p, .p-articles__page-content li, .p-articles__page-content table, .p-articles__page-content blockquote {
     font-size: 2rem;
   }
+}
+
+.p-articles__single-content ul, .p-articles__single-content ol, .p-articles__page-content ul, .p-articles__page-content ol {
+  -webkit-padding-start: 5rem;
+          padding-inline-start: 5rem;
 }
 
 .p-articles__single-content li, .p-articles__page-content li {

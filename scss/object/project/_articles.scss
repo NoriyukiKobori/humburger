@@ -71,7 +71,7 @@
         width: 90%;
         margin: 1rem auto 1rem auto;
         color: #3C2A10;
-        h2 , h3 , h4 , p , ul ,blockquote{
+        h2 , h3 , h4 , p , ul , ol ,blockquote{
             margin: 2.5rem 0 2.5rem 0;
         }
         table{
@@ -114,6 +114,9 @@
             @include breakpoint(tablet){
                 font-size: 2rem;
             }
+        }
+        ul , ol{
+            padding-inline-start: 5rem;
         }
         li{
             list-style-position: inside;
