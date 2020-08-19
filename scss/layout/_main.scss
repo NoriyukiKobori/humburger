@@ -8,4 +8,12 @@
     hr{
         margin-top: 2%;
     }
+    &__not-found{
+        color: brown;
+        font-size: 6rem;
+        padding: 2rem;
+        @include breakpoint(tablet){
+            font-size: 3rem;
+        }
+    }
 }
