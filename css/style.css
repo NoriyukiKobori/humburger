@@ -461,6 +461,11 @@ div.aligncenter {
   }
 }
 
+.c-button__submit:hover {
+  color: #F2EDE9;
+  background-color: #707070;
+}
+
 .c-button__menu {
   position: absolute;
   top: 1px;
@@ -476,6 +481,10 @@ div.aligncenter {
   .c-button__menu {
     display: none;
   }
+}
+
+.c-button__menu:hover {
+  zoom: 1.1;
 }
 
 .c-button__close #close-button {
@@ -522,6 +531,10 @@ div.aligncenter {
   .c-button__to-page-button {
     font-size: 1.5rem;
   }
+}
+
+.c-button__to-page-button:hover {
+  background-color: #fce6d0;
 }
 
 .p-hero {

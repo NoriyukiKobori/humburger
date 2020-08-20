@@ -28,6 +28,10 @@
             font-size: 1.5rem;
         }
     }
+    &__submit:hover{
+        color: #F2EDE9;
+        background-color: #707070;
+    }
     &__menu{
         position: absolute;
         top: 1px;
@@ -40,6 +44,9 @@
         @include breakpoint(wide){
             display: none;
         }    
+    }
+    &__menu:hover{
+        zoom: 1.1;
     }
     &__close{
         #close-button{
@@ -77,6 +84,9 @@
             @include breakpoint(tablet){
                 font-size: 1.5rem;
             }
+        }
+        &-button:hover{
+            background-color: #fce6d0;
         }
     }
 }
