@@ -7,10 +7,17 @@ html{
 }
 body{
     display: grid;
+    height: 100vh;
     grid-template:
-        "header" 30vw
-        "main" auto
-        "footer" auto/100%;
+        "header sidebar" 30vw
+        "main sidebar" auto
+        "footer footer" 25vw/100%;
+    @include breakpoint(tablet){
+        grid-template: 
+            "header sidebar" 30vw
+            "main sidebar" auto
+            "footer footer" 12vw/100% 0;
+    }        
     @include breakpoint(wide){
         grid-template: 
             "header sidebar" 12vw

@@ -11,7 +11,14 @@ html {
 body {
   display: -ms-grid;
   display: grid;
-  grid-template: "header" 30vw "main" auto "footer" auto/100%;
+  height: 100vh;
+  grid-template: "header sidebar" 30vw "main sidebar" auto "footer footer" 25vw/100%;
+}
+
+@media (min-width: 641px) {
+  body {
+    grid-template: "header sidebar" 30vw "main sidebar" auto "footer footer" 12vw/100% 0;
+  }
 }
 
 @media (min-width: 962px) {
