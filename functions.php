@@ -41,6 +41,15 @@
         'secondary' =>__( 'Sub Menu' , 'humburger' )
     ));
 
+    //author情報を非表示
+    function disable_author_archive_query() {
+        if( preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING']) ){
+            wp_redirect( home_url() );
+            exit;
+        }
+        }
+        add_action('init', 'disable_author_archive_query');
+
     //theme checkエラー回避
 
     if ( ! isset( $content_width ) ) {
